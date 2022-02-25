@@ -36,6 +36,8 @@ nav#main-menu>ul#menu-toggle {
     background-color: #28587B;
     display: flex;
     flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* ESTILOS HAMBURGUESA */
@@ -66,4 +68,28 @@ div#hamburguesa {
 
 #hamburguesa>span:nth-child(3) {
     transform: translate(0.75rem, 0.001rem);
+}
+
+/*ESTILOS BUSCADOR*/
+#buscador>img {
+    cursor: pointer;
+    padding: 1rem;
+}
+
+/*ESTILOS LOGO*/
+#logo {
+    width: 10rem;
+    height: 3rem;
+    color: #BA6B30;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo>span {
+    text-decoration: underline;
+    font-size: large;
+
+    font-family: 'Roboto, Light', sans-serif;
 }
