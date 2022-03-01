@@ -1,6 +1,5 @@
 #caja-cita {
 
-    position: absolute;
     width: 90%;
     z-index: 2;
     margin-top: 3px;
@@ -74,6 +73,7 @@
 /*POSICIONAMIENTO POR ENCIMA DE LA IMAGEN*/
 #content-cita {
     position: absolute;
+    width: 90%;
 }
 
 /*BACKGROUND*/
