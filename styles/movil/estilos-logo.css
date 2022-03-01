@@ -1,0 +1,18 @@
+#logo {
+
+    width: 10rem;
+    height: 3rem;
+    color: #BA6B30;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo>span {
+
+    text-decoration: underline;
+    font-size: large;
+
+    font-family: 'Roboto, Light', sans-serif;
+}
