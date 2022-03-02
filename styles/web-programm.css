@@ -9,28 +9,58 @@ body {
     font-size: 12px;
 }
 
-nav#main-menu {
-    /*Oculto el menú por el momento*/
-    background-color: white;
-    cursor: pointer;
-}
+/* ---------- CLASES ---------- */
+.header-slots {
 
-/*POSICIONAMIENTO ICONO HAMBURGUESA*/
-nav#main-menu>ul#menu-toggle {
     display: flex;
-    flex-flow: column;
-    padding-left: 2rem;
-    position: absolute;
-    top: 0;
-    left: -20rem;
-    width: 20rem;
-    height: 100vh;
-    background-color: white;
-    margin: 0;
-    opacity: 1;
-    z-index: 200;
+    width: 100%;
+    flex-flow: row nowrap;
+    justify-content: center;
 }
 
+span.linea-cab-cita {
+    position: absolute;
+
+    height: 30px;
+    width: 3px;
+    left: 0;
+    margin-left: 18px;
+    background-color: #114B5F;
+
+}
+
+.texto-cab {
+
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    text-align: center;
+    color: #114B5F;
+}
+
+/*punta "fondo de secciones"*/
+.punta {
+    width: 0;
+    height: 0;
+    border: 100px solid transparent;
+    border-bottom-color: #63639c;
+    position: relative;
+    background: transparent;
+    top: -100px;
+}
+
+.punta:after {
+    content: '';
+    position: absolute;
+    left: -100px;
+    top: 100px;
+    width: 0;
+    height: 0;
+    border: 100px solid transparent;
+    border-top-color: #63639c;
+}
+
+/* -------- ESTILOS CABECERA -------- */
 #main-header {
 
     background-color: #28587B;
@@ -41,43 +71,16 @@ nav#main-menu>ul#menu-toggle {
 }
 
 /* ESTILOS HAMBURGUESA */
-div#hamburguesa {
-    display: flex;
-    flex-flow: column;
-    width: 2.81rem;
-    height: 2.5rem;
-    border-radius: 0.2rem;
-    cursor: pointer;
-    justify-content: space-evenly;
-}
+#hamburguesa>span {
 
-/*estilos linea de hamburguesa + posicionamiento*/
-.line-ham {
-    width: 1.1rem;
-    height: 0.2rem;
-    background-color: black;
-}
-
-#hamburguesa>span:nth-child(1) {
-    transform: translate(0.75rem, 0.2rem);
-}
-
-#hamburguesa>span:nth-child(2) {
-    transform: translate(0.75rem, 0.1rem);
-}
-
-#hamburguesa>span:nth-child(3) {
-    transform: translate(0.75rem, 0.001rem);
-}
-
-/*ESTILOS BUSCADOR*/
-#buscador>img {
     cursor: pointer;
     padding: 1rem;
+    font-size: xx-large;
 }
 
-/*ESTILOS LOGO*/
+/* LOGO */
 #logo {
+
     width: 10rem;
     height: 3rem;
     color: #BA6B30;
@@ -88,8 +91,145 @@ div#hamburguesa {
 }
 
 #logo>span {
+
     text-decoration: underline;
     font-size: large;
 
     font-family: 'Roboto, Light', sans-serif;
+}
+
+/* BUSCADOR */
+#buscador>img {
+
+    cursor: pointer;
+    padding: 1rem;
+}
+
+/* MENU */
+nav#main-menu>ul#menu-toggle {
+
+    display: flex;
+    flex-flow: column;
+    padding-left: 2rem;
+    position: absolute;
+    top: 3.68rem;
+    left: -20rem;
+    width: 14rem;
+    height: 100vh;
+    background-color: #D5AC4E;
+    margin: 0;
+    opacity: 1;
+    z-index: 10;
+}
+
+/* -------- ESTILOS CUERPO PRINCIPAL -------- */
+main {
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* --- CAJA CITA --- */
+#caja-cita {
+
+    width: 90%;
+    z-index: 2;
+    margin-top: 3px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: space-between;
+}
+
+/*CABECERA*/
+#cabecera-cita {
+    display: flex;
+    width: 100%;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+#texto-cab {
+
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    text-align: center;
+}
+
+#linea-cab-cita {
+
+    position: absolute;
+    left: 0;
+    background-color: black;
+    height: 30px;
+    width: 3px;
+    margin-left: 3px;
+}
+
+/*POSICIONAMIENTO CAJAS INFERIORES*/
+#container-boton {
+
+    margin-top: 4rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*mensaje informativo*/
+#texto-info {
+
+    flex-basis: 56%;
+}
+
+#texto-info>p {
+
+    background-color: #CACACA;
+    margin-left: 3px;
+    padding: 3px;
+    border-radius: 0.3rem;
+}
+
+/*BOTON CITA*/
+#boton-cita>p {
+
+    margin-right: 6px;
+    padding: 0.9rem 1rem;
+    background-color: #028090;
+    color: white;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+/*POSICIONAMIENTO POR ENCIMA DE LA IMAGEN*/
+#content-cita {
+    position: absolute;
+    width: 90%;
+}
+
+/*BACKGROUND*/
+#manos {
+
+    width: 100%;
+    height: 100%;
+    border-radius: 0.3rem;
+    z-index: 1;
+}
+
+/* --- PRESENTACION --- */
+#presentacion {
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+
+    width: 90%;
+    margin-top: 10px;
+}
+
+#presentacion>p {
+    text-align: justify;
 }
