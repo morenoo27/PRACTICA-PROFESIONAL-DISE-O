@@ -1,4 +1,8 @@
+
+
 $(document).ready(function () {
+
+    $("#caja-buscar").css("display", "none");
 
     $("#hamburguesa").click(function (e) {
         e.preventDefault();
@@ -16,6 +20,14 @@ $(document).ready(function () {
 
             menuPlegado()
         }
+    });
+
+    $("#buscador").click(function (e) {
+        e.preventDefault();
+
+        $("#caja-buscar").stop(true, false)
+
+        $("#caja-buscar").slideToggle();
     });
 });
 
