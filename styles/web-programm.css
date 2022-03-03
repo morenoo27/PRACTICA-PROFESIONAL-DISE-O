@@ -318,6 +318,13 @@ main {
 
 /* --- FONDO --- */
 
+/*estilo de los iconos*/
+img {
+    width: 2rem;
+    height: 2rem;
+}
+
+/*posicionamiento fondo*/
 #fondo-footer {
 
     display: flex;
@@ -341,6 +348,7 @@ main {
     background-color: #6f9cbc;
 }
 
+/*fondo colorido*/
 #back {
 
     width: 100%;
@@ -349,8 +357,72 @@ main {
     background-color: #6f9cbc;
 }
 
+/* --- CONTENIDO --- */
+
+/*estilos del texto del footer*/
+.texto-footer {
+    font-size: large;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 0.3rem;
+}
+
+/*caja con el contenido*/
 #content-footer {
 
     position: absolute;
     z-index: 8;
+    margin-top: 6rem;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    background-color: #6f9cbc;
+}
+
+/*seccion redes sociales*/
+#redes-sociales {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*seccion email*/
+#email {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/*estilos caja telefonos*/
+#caja-tlf {
+
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#caja-tlf>p {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*caja politicas*/
+#politicas {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#politicas>span {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
 }
