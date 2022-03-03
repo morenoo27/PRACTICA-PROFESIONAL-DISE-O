@@ -310,6 +310,25 @@ main {
     justify-content: center;
 }
 
+/* --- CAJA VISITANOS --- */
+#localizacion {
+    margin-top: 6px;
+}
+
+#mapa {
+
+    padding-top: 3rem;
+    background-color: #CACACA;
+    display: flex;
+    justify-content: center;
+}
+
+#mapa>img {
+
+    width: 24rem;
+    height: 12rem;
+}
+
 /* -------- ESTILOS FOOTER -------- */
 #main-footer {
 
