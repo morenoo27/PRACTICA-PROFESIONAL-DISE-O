@@ -7,9 +7,12 @@ body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
     font-size: 12px;
+
+    overflow-x: hidden;
 }
 
 /* ---------- CLASES ---------- */
+/*seccion de la cabecera de los slots*/
 .header-slots {
 
     display: flex;
@@ -18,6 +21,19 @@ body {
     justify-content: center;
 }
 
+/*seccion de la cabecera con fondo coloreado*/
+.header-slots-fondo {
+
+    display: flex;
+    position: absolute;
+    width: 100%;
+    flex-flow: row nowrap;
+    justify-content: center;
+    left: 0;
+    margin-top: 3rem;
+}
+
+/*barra vertical*/
 span.linea-cab-cita {
     position: absolute;
 
@@ -29,6 +45,7 @@ span.linea-cab-cita {
 
 }
 
+/*texto de la cabecera de las diferentes secciones*/
 .texto-cab {
 
     font-size: 24px;
@@ -42,22 +59,72 @@ span.linea-cab-cita {
 .punta {
     width: 0;
     height: 0;
-    border: 100px solid transparent;
-    border-bottom-color: #63639c;
-    position: relative;
-    background: transparent;
-    top: -100px;
+    border-right: 20rem solid transparent;
+    border-top: 1px solid transparent;
+    border-left: 20rem solid transparent;
+    border-bottom: 4rem solid #CACACA;
+    border-radius: 6px;
 }
 
-.punta:after {
-    content: '';
+/*imagenes dentro de las secciones*/
+.img-ambito {
+    width: 24.5rem;
+    height: 12rem;
+    border-radius: 6px;
+}
+
+/*caja de foto+footer*/
+.ambito {
+
+    display: flex;
+    flex-flow: column;
+    width: 90%;
+    padding-top: 1rem;
+    padding-bottom: 10px;
+    justify-content: space-evenly;
+
+    background-color: #CACACA;
+}
+
+/*fondo balnco uniforme para el sector del area*/
+.fondo {
+    width: 24.5rem;
+    border-radius: 6px;
+    margin-left: 122px;
+    background-color: white;
+}
+
+/*barra vertical con fondo(color azul claro)*/
+.linea-cab-cita-ambito {
+
     position: absolute;
-    left: -100px;
-    top: 100px;
-    width: 0;
-    height: 0;
-    border: 100px solid transparent;
-    border-top-color: #63639c;
+
+    height: 30px;
+    width: 3px;
+    left: 0;
+    margin-left: 18px;
+    background-color: #028090;
+}
+
+.fondo>footer {
+    width: 100%;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6px;
+    padding-bottom: 6px;
+}
+
+/*texto h color azul*/
+.texto-cab-ambito {
+
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    text-align: center;
+    color: #028090;
 }
 
 /* -------- ESTILOS CABECERA -------- */
@@ -140,7 +207,6 @@ main {
 
     display: flex;
     flex-flow: column nowrap;
-    align-content: space-between;
 }
 
 /*CABECERA*/
@@ -172,11 +238,12 @@ main {
 /*POSICIONAMIENTO CAJAS INFERIORES*/
 #container-boton {
 
-    margin-top: 4rem;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
+
+    align-self: flex-end;
 }
 
 /*mensaje informativo*/
@@ -232,4 +299,58 @@ main {
 
 #presentacion>p {
     text-align: justify;
+}
+
+/* --- AREAS PRACTICA --- */
+#areas-trabajo {
+
+    left: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+/* -------- ESTILOS FOOTER -------- */
+#main-footer {
+
+    background-color: #CACACA;
+}
+
+/* --- FONDO --- */
+
+#fondo-footer {
+
+    display: flex;
+
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+}
+
+/*cabecera del footer*/
+#top {
+
+    position: absolute;
+    width: 150%;
+    height: 10rem;
+    margin-top: 0.5rem;
+    left: -6.7rem;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    z-index: 2;
+    background-color: #6f9cbc;
+}
+
+#back {
+
+    width: 100%;
+    height: 10rem;
+    margin-top: 4rem;
+    background-color: #6f9cbc;
+}
+
+#content-footer {
+
+    position: absolute;
+    z-index: 8;
 }
