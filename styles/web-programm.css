@@ -127,6 +127,12 @@ span.linea-cab-cita {
     color: #028090;
 }
 
+/*estilo de los iconos*/
+img {
+    width: 2rem;
+    height: 2rem;
+}
+
 /* -------- ESTILOS CABECERA -------- */
 #main-header {
 
@@ -173,20 +179,61 @@ span.linea-cab-cita {
 }
 
 /* MENU */
-nav#main-menu>ul#menu-toggle {
+ul#menu-toggle {
 
     display: flex;
-    flex-flow: column;
+    flex-flow: column nowrap;
     padding-left: 2rem;
     position: absolute;
-    top: 3.68rem;
+    top: 3rem;
     left: -20rem;
-    width: 14rem;
+    width: 20rem;
+    padding-left: 0;
     height: 100vh;
     background-color: #D5AC4E;
     margin: 0;
     opacity: 1;
     z-index: 10;
+}
+
+ul#menu-toggle>li {
+
+    /*quitamos estilos del lis*/
+    list-style: none;
+
+    /*posicionamiento*/
+    left: 0;
+    padding-left: 0.7rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-self: center;
+    width: 97%;
+    margin-top: 1rem;
+
+    /*estilos*/
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 0.5px solid;
+}
+
+ul#menu-toggle>li:last-child {
+
+    padding-left: 0rem;
+    margin-top: 20rem;
+    align-self: flex-end;
+    border-bottom: 0;
+}
+
+#li-rrss>div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+
+    /*
+    align-self: flex-end;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;*/
 }
 
 /* -------- ESTILOS CUERPO PRINCIPAL -------- */
@@ -275,6 +322,11 @@ main {
 #content-cita {
     position: absolute;
     width: 90%;
+    height: 13.5rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
 }
 
 /*BACKGROUND*/
@@ -336,12 +388,6 @@ main {
 }
 
 /* --- FONDO --- */
-
-/*estilo de los iconos*/
-img {
-    width: 2rem;
-    height: 2rem;
-}
 
 /*posicionamiento fondo*/
 #fondo-footer {

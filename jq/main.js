@@ -30,6 +30,6 @@ function menuPlegado() {
     }, "fast");
 
     $("html, body").css({
-        'overflow': 'visible',
+        'overflow-y': 'visible',
     })
 }
