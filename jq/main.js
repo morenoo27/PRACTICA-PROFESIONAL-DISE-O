@@ -25,9 +25,12 @@ $(document).ready(function () {
     $("#buscador").click(function (e) {
         e.preventDefault();
 
-        $("#caja-buscar").stop(true, false)
+        if ($("#menu-toggle").css("left") !== "0px") {
 
-        $("#caja-buscar").slideToggle();
+            $("#caja-buscar").stop(true, false)
+
+            $("#caja-buscar").slideToggle();
+        }
     });
 });
 
