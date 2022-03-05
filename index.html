@@ -50,6 +50,22 @@
             <div id="buscador">
                 <img src="images/iconmonstr-search-thin.svg" alt="boton busqueda">
             </div>
+
+            <nav id="nav-cab">
+                <ul id="menu-cab">
+                    <li class="lugar">Inicio</li>
+                    <li class="separador"></li>
+                    <li class="lugar">Entorno cliente</li>
+                    <li class="separador"></li>
+                    <li class="lugar">Entorno servidor</li>
+                    <li class="separador"></li>
+                    <li class="lugar">I.A</li>
+                    <li class="separador"></li>
+                    <li class="lugar">Pedir cita previa</li>
+                    <li class="separador"></li>
+                    <li class="lugar">Contacto</li>
+                </ul>
+            </nav>
         </header>
 
         <div id="caja-buscar">
@@ -60,12 +76,10 @@
 
         <main>
             <section id="caja-cita">
-                <picture><img id="manos" src="images/Apreton-de-manos-iStock-estrecha.jpg"
-                        alt="apreton de manos caja cita">
-                </picture>
+                <img id="manos" src="images/Apreton-de-manos-iStock-estrecha.jpg" alt="apreton de manos caja cita">
+                <img id="manitas" src="images/manitas.PNG" alt="apreton de manos caja cita">
                 <div id="content-cita">
                     <header id="cabecera-cita">
-                        <span id="linea-cab-cita"></span>
                         <span id="texto-cab">PROGRAMA UNA CITA</span>
                     </header>
                     <div id="container-boton">
@@ -84,7 +98,6 @@
 
             <article id="presentacion">
                 <header class="header-slots">
-                    <span class="linea-cab-cita"></span>
                     <span class="texto-cab">¿QUÉ SOMOS?</span>
                 </header>
 
@@ -104,69 +117,88 @@
                 </p>
             </article>
 
+            <div class="punta"></div>
+
             <section id="areas-trabajo">
 
                 <header>
-                    <div class="header-slots-fondo">
-                        <span class="linea-cab-cita"></span>
-                        <span class="texto-cab">Áreas de Práctica</span>
-                    </div>
-
-                    <div class="punta"></div>
+                    <span class="texto-cab">Áreas de Práctica</span>
                 </header>
 
                 <article class="ambito">
-                    <div class="fondo">
-                        <picture>
-                            <img class="img-ambito" src="images/Backend-Developer-1024x768.png" alt="lado servidor">
-                        </picture>
-                        <footer>
-                            <span class="linea-cab-cita-ambito"></span>
-                            <span class="texto-cab-ambito">Programacion en lado servidor</span>
-                        </footer>
-                    </div>
+                    <img class="img-ambito" src="images/Backend-Developer-1024x768.png" alt="lado servidor">
+                    <footer>
+                        <span class="cab-ambito">Programacion en lado servidor</span>
+                    </footer>
                 </article>
 
                 <article class="ambito">
-                    <div class="fondo">
-                        <picture>
-                            <img class="img-ambito"
-                                src="images/Lenguaje-de-programación-de-JavaScript-para-desarrollo-web-front-end-1.png"
-                                alt="lado cliente">
-                        </picture>
-                        <footer>
-                            <span class="linea-cab-cita-ambito"></span>
-                            <span class="texto-cab-ambito">Programacion en lado cliente</span>
-                        </footer>
-                    </div>
+                    <img class="img-ambito"
+                        src="images/Lenguaje-de-programación-de-JavaScript-para-desarrollo-web-front-end-1.png"
+                        alt="lado cliente">
+                    <footer>
+                        <span class="cab-ambito">Programacion en lado cliente</span>
+                    </footer>
                 </article>
 
                 <article class="ambito">
-                    <div class="fondo">
-                        <picture>
-                            <img class="img-ambito" src="images/IA.png" alt="lado cliente">
-                        </picture>
-                        <footer>
-                            <span class="linea-cab-cita-ambito"></span>
-                            <span class="texto-cab-ambito">Inteligencia Artificial</span>
-                        </footer>
-                    </div>
+                    <img class="img-ambito" src="images/IA.png" alt="lado cliente">
+                    <footer>
+                        <span class="cab-ambito">Inteligencia Artificial</span>
+                    </footer>
                 </article>
+
+                <!--Contenedor del slider-->
+                <article id="slider" class="contenedor-slider">
+
+                    <!--Botones paa moverse a la izquierda y derecha-->
+                    <span id="boton-izquierda"><</span>
+                            <span id="boton-derecha">></span>
+
+                            <ul class="slider-wrapper">
+
+                                <li class="current-slide">
+                                    <img class="img-slider" src="images/Backend-Developer-1024x768.png"
+                                        alt="ambito programacion">
+
+                                    <div class="caption">
+                                        <h2 class="slider-title">Entorno en lado Servidor</h2>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <img class="img-slider"
+                                        src="images/Lenguaje-de-programación-de-JavaScript-para-desarrollo-web-front-end-1.png"
+                                        alt="ambito programacion">
+
+                                    <div class="caption">
+                                        <h2 class="slider-title">Entorno en lado Cliente</h2>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <img class="img-slider" src="images/IA.png" alt="ambito programacion">
+
+                                    <div class="caption">
+                                        <h2 class="slider-title">Inteligencia artificial</h2>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <!-- Controles de Navegacion -->
+                            <ul id="control-buttons" class="control-buttons">
+                            </ul>
+                </article>
+                <!--fin slider-->
             </section>
 
+            <div class="punta"></div>
             <section id="localizacion">
 
                 <header>
-                    <div class="header-slots-fondo">
-                        <span class="linea-cab-cita"></span>
-                        <span class="texto-cab">Visitanos</span>
-                    </div>
-
-                    <div class="punta"></div>
-                    <div id="mapa">
-                        <img src="images/download.png" alt="maps">
-                    </div>
+                    <span class="texto-cab">Visitanos</span>
                 </header>
+                <img src="images/download.png" alt="maps">
             </section>
         </main>
 
@@ -174,25 +206,37 @@
             <div id="fondo-footer">
                 <div id="top"></div>
                 <div id="content-footer">
+                    <header>
+                        <p>CONTACTANOS</p>
+                        <P>LOCALIZANOS</P>
+                        <P>POLITICAS</P>
+                    </header>
                     <p id="redes-sociales">
                         <img src="images/facebook.png" alt="facebook">
                         <img src="images/twitter.png" alt="twitter">
                         <img src="images/instagram.png" alt="instagram">
                     </p>
-                    <p id="email">
-                        <img src="images/email.png" alt="email">
-                        <span class="texto-footer">inventado@gmail.com</span>
-                    </p>
-                    <div id="caja-tlf">
-                        <p>
-                            <img src="images/telefono.png" alt="telefono">
-                            <span class="texto-footer">999 999 999</span>
+                    <div id="e-t">
+                        <p id="email">
+                            <img src="images/email.png" alt="email">
+                            <span class="texto-footer">inventado@gmail.com</span>
                         </p>
-                        <p>
-                            <img src="images/whatsapp.png" alt="whatsapp">
-                            <span class="texto-footer">+34 777 777 777</span>
-                        </p>
+                        <div id="caja-tlf">
+                            <p>
+                                <img src="images/telefono.png" alt="telefono">
+                                <span class="texto-footer">999 999 999</span>
+                            </p>
+                            <p>
+                                <picture>
+
+                                </picture>
+                                <img src="images/whatsapp.png" alt="whatsapp">
+                                <span class="texto-footer">+34 777 777 777</span>
+                            </p>
+                        </div>
                     </div>
+
+                    <img id="foto-footer" src="images/download.png" alt="maps">
 
                     <p id="politicas">
                         <span class="texto-footer">Política de cookies</span>

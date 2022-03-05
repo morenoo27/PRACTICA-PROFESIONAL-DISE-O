@@ -11,6 +11,27 @@ body {
     overflow-x: hidden;
 }
 
+/* -------- SECCIONES ESCRITORIO PRIMERO OCULTAS -------- */
+#foto-footer {
+    display: none;
+}
+
+#content-footer>header {
+    display: none;
+}
+
+#nav-cab {
+    display: none;
+}
+
+#slider {
+    display: none;
+}
+
+#manitas {
+    display: none;
+}
+
 /* ---------- CLASES ---------- */
 /*seccion de la cabecera de los slots*/
 .header-slots {
@@ -33,98 +54,27 @@ body {
     margin-top: 3rem;
 }
 
-/*barra vertical*/
-span.linea-cab-cita {
-    position: absolute;
-
-    height: 30px;
-    width: 3px;
-    left: 0;
-    margin-left: 4%;
-    background-color: #114B5F;
-
-}
-
 /*texto de la cabecera de las diferentes secciones*/
 .texto-cab {
 
-    font-size: 24px;
+    font-size: xx-large;
     font-family: 'Roboto', sans-serif;
     width: 100%;
     text-align: center;
     color: #114B5F;
+    border-left: 3px solid #114B5F;
 }
 
 /*punta "fondo de secciones"*/
 .punta {
     width: 0;
     height: 0;
-    border-right: 20rem solid transparent;
+    border-right: 30rem solid transparent;
     border-top: 1px solid transparent;
-    border-left: 20rem solid transparent;
+    border-left: 30rem solid transparent;
     border-bottom: 4rem solid #CACACA;
     border-radius: 6px;
-}
-
-/*imagenes dentro de las secciones*/
-.img-ambito {
-    width: 100%;
-    height: 12rem;
-    border-radius: 6px;
-}
-
-/*caja de foto+footer*/
-.ambito {
-
-    display: flex;
-    flex-flow: column;
-    width: 90%;
-    padding-top: 1rem;
-    padding-bottom: 10px;
-    justify-content: center;
-
-    background-color: #CACACA;
-}
-
-/*fondo balnco uniforme para el sector del area*/
-.fondo {
-    width: 70%;
-    border-radius: 6px;
-    margin-left: 21%;
-    background-color: white;
-}
-
-/*barra vertical con fondo(color azul claro)*/
-.linea-cab-cita-ambito {
-
-    position: absolute;
-
-    height: 30px;
-    width: 3px;
-    left: 0;
-    margin-left: 4.5%;
-    background-color: #028090;
-}
-
-.fondo>footer {
-    width: 100%;
-
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 6px;
-    padding-bottom: 6px;
-}
-
-/*texto h color azul*/
-.texto-cab-ambito {
-
-    font-size: 18px;
-    font-family: 'Roboto', sans-serif;
-    width: 100%;
-    text-align: center;
-    color: #028090;
+    margin-top: 1rem;
 }
 
 /*estilo de los iconos*/
@@ -296,20 +246,11 @@ main {
 
 #texto-cab {
 
-    font-size: 24px;
+    font-size: xx-large;
     font-family: 'Roboto', sans-serif;
     width: 100%;
     text-align: center;
-}
-
-#linea-cab-cita {
-
-    position: absolute;
-    left: 0;
-    background-color: black;
-    height: 30px;
-    width: 3px;
-    margin-left: 3px;
+    border-left: 3px solid;
 }
 
 /*POSICIONAMIENTO CAJAS INFERIORES*/
@@ -319,8 +260,6 @@ main {
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-
-    align-self: flex-end;
 }
 
 /*mensaje informativo*/
@@ -352,8 +291,7 @@ main {
 #content-cita {
     position: absolute;
     width: 90%;
-    height: 13.5rem;
-
+    height: 25%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
@@ -365,7 +303,12 @@ main {
     width: 100%;
     height: 100%;
     border-radius: 0.3rem;
-    z-index: 1;
+}
+
+#manitas {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.3rem;
 }
 
 /* --- PRESENTACION --- */
@@ -386,29 +329,67 @@ main {
 /* --- AREAS PRACTICA --- */
 #areas-trabajo {
 
-    left: 0;
+    width: 100%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
+    align-items: center;
+    background-color: #CACACA;
+}
+
+#areas-trabajo>header {
+    display: flex;
+    width: 90%;
+}
+
+.ambito {
+    background-color: white;
+    border-radius: 6px;
+    width: 90%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin: 0.5rem 0;
+}
+
+.ambito>img {
+    width: 100%;
+    height: 30%;
+    border-radius: 6px;
+}
+
+.ambito>footer {
+    display: flex;
+    width: 100%;
+}
+
+.cab-ambito {
+    width: 100%;
+    text-align: center;
+    font-size: x-large;
+    font-family: 'Roboto', sans-serif;
+    color: #028090;
+    border-left: 3px solid #028090;
 }
 
 /* --- CAJA VISITANOS --- */
 #localizacion {
-    margin-top: 6px;
-}
-
-#mapa {
-
-    padding-top: 3rem;
+    width: 100%;
     background-color: #CACACA;
     display: flex;
-    justify-content: center;
+    flex-flow: column nowrap;
+    align-items: center;
 }
 
-#mapa>img {
+#localizacion>header {
+    display: flex;
+    width: 90%;
+}
 
-    width: 24rem;
-    height: 12rem;
+#localizacion>img {
+    margin-top: 1rem;
+    width: 90%;
+    height: 30%;
 }
 
 /* -------- ESTILOS FOOTER -------- */
@@ -520,4 +501,441 @@ main {
 #politicas>span {
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
+}
+
+
+@media screen and (min-width: 800px) {
+
+    #manos {
+        display: none;
+    }
+
+    #manitas {
+        display: block;
+    }
+
+    .punta {
+        width: 0;
+        height: 0;
+        border-right: 80rem solid transparent;
+        border-top: 1px solid transparent;
+        border-left: 80rem solid transparent;
+        border-bottom: 4rem solid #CACACA;
+        border-radius: 6px;
+        margin-top: 1rem;
+    }
+
+    /* -------- ESTILOS FOOTER -------- */
+    #e-t {
+        order: -1;
+    }
+
+    #redes-sociales {
+
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #caja-tlf {
+
+        flex-flow: column nowrap;
+    }
+
+    #content-footer {
+
+        margin-top: 15%;
+        margin-left: 5%;
+        width: 90%;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        z-index: 11;
+    }
+
+    #politicas {
+        flex-flow: column nowrap;
+    }
+
+    #top {
+
+        position: absolute;
+        width: 150%;
+        height: 10rem;
+        left: -20%;
+        margin-top: 0.5rem;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        z-index: 10;
+        background-color: #6f9cbc;
+    }
+
+    #back {
+
+        margin-top: 20%;
+        background-color: #6f9cbc;
+        z-index: 0;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    /* -------- ESTILOS CABECERA -------- */
+    #main-header {
+        flex-flow: row wrap;
+    }
+
+    #nav-cab {
+        display: block;
+        width: 100%;
+        background-color: #6f9cbc;
+    }
+
+    #menu-cab {
+        padding-left: 0;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .lugar {
+        list-style: none;
+        font-size: medium;
+        font-family: 'Roboto', sans-serif;
+        padding: 0.5rem 2rem;
+        cursor: pointer;
+    }
+
+    .separador {
+
+        list-style: none;
+        padding: 0px;
+        height: 2rem;
+        width: 1px;
+        background-color: black;
+    }
+
+    /* -------- ESTILOS CONTENIDO -------- */
+
+    /* --- BUSCADOR --- */
+    #caja-buscar {
+        position: absolute;
+        top: 0;
+        right: 5%;
+        width: 40%;
+        z-index: 15;
+        justify-content: center;
+        background-color: transparent;
+    }
+
+    #caja-buscar>img {
+        display: none;
+    }
+
+    #caja-buscar>input {
+        margin-right: 6px;
+        background-color: transparent;
+    }
+
+    /* ------ CONTENIDO ------ */
+    #contenido {
+        margin-top: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 1rem;
+    }
+
+    .punta {
+        display: none;
+    }
+
+    #areas-trabajo {
+        margin-top: 1rem;
+        padding-top: 1rem;
+    }
+
+    #localizacion {
+        display: none;
+    }
+
+    .ambito {
+        display: none;
+    }
+
+    /* ----- SLIDER ----- */
+
+    #slider {
+        display: inline;
+        width: 100%;
+    }
+
+    .contenedor-slider {
+        width: 100%;
+    }
+
+    .img-slider {
+        width: 100%;
+    }
+
+    .slider-wrapper {
+        z-index: 1;
+        position: relative;
+        width: 100%;
+        height: 40rem;
+        background: #FFF;
+        border: 5px solid #4b5973;
+        overflow: hidden;
+    }
+
+    .slider-wrapper li {
+        display: none;
+    }
+
+    .slider-wrapper .current-slide {
+        display: block;
+    }
+
+    .slider-shadow {
+        width: 100%;
+        height: 15px;
+        position: relative;
+    }
+
+    .slider-shadow:after,
+    .slider-shadow:before {
+        content: '';
+        position: absolute;
+        background: #171c24;
+        height: 100%;
+        width: 50%;
+        left: 10px;
+        top: -20px;
+        -webkit-transform: rotate(-4deg);
+        -ms-transform: rotate(-4deg);
+        -o-transform: rotate(-4deg);
+        transform: rotate(-4deg);
+        -webkit-box-shadow: 0 0 15px 8px #171c24;
+        box-shadow: 0 0 15px 8px #171c24;
+    }
+
+    .slider-shadow:before {
+        right: 10px;
+        left: auto;
+        -webkit-transform: rotate(4deg);
+        -ms-transform: rotate(4deg);
+        -o-transform: rotate(4deg);
+        transform: rotate(4deg);
+    }
+
+    .slider-wrapper img {
+        position: absolute;
+        max-width: 100%;
+        height: auto;
+        top: 0;
+        left: 0;
+    }
+
+
+    /**
+   * ---[Caption] ---------------------- 
+   **/
+
+    .slider-wrapper .caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.65);
+        width: 100%;
+        padding: 10px;
+        color: #FFF;
+        -webkit-transform: translateY(100%);
+        -ms-transform: translateY(100%);
+        -o-transform: translateY(100%);
+        transform: translateY(100%);
+        opacity: 0;
+        -webkit-transition: all 0.4s ease;
+        -o-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+    }
+
+    .slider-wrapper li:hover .caption {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        -o-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .slider-wrapper h2 {
+        color: #00c5b9;
+        font-size: 2em;
+        font-weight: 400;
+        margin-bottom: 6px;
+    }
+
+    .slider-wrapper p {
+        font-size: 1.6em;
+        font-weight: 300;
+        line-height: 1.4em;
+    }
+
+
+    /**
+   * ---[Botones-Control] ---------------------- 
+   **/
+
+    .control-buttons {
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .control-buttons li {
+        cursor: pointer;
+        display: inline-block;
+        background: #424f66;
+        text-indent: -99999px;
+        height: 12px;
+        width: 12px;
+        margin: 0 6px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+    }
+
+    .control-buttons li.active {
+        background: #00c5b9;
+    }
+
+    .authors {
+        text-align: center;
+        color: #7a8699;
+        display: block;
+        font-size: 1.6em;
+        font-weight: 300;
+        margin-top: 80px;
+        font-size: 300;
+    }
+
+    /* ESTILOS DE LOS BOTONES DE "MOVIMIENTO" */
+
+    #boton-izquierda {
+        /*posicionamiento boton*/
+        position: absolute;
+        margin-top: 30%;
+        margin-left: 0.5rem;
+
+        /*para que este por encima de las imagenes*/
+        z-index: 2;
+
+        /*estilo boton*/
+        background-color: grey;
+        opacity: 0.7;
+        padding: 0.7rem;
+        border-radius: 0.3rem;
+        cursor: pointer;
+    }
+
+
+    #boton-derecha {
+        /*posicionamiento boton*/
+        position: absolute;
+        margin-top: 30%;
+        right: 4%;
+
+        /*para que este por encima de las imagenes*/
+        z-index: 2;
+
+        /*estilo boton*/
+        background-color: grey;
+        opacity: 0.7;
+        padding: 0.7rem;
+        border-radius: 0.3rem;
+        cursor: pointer;
+    }
+
+    /*EVENTO HOVER DE BOTONES*/
+    #boton-izquierda:hover {
+        opacity: 1;
+    }
+
+    #boton-derecha:hover {
+        opacity: 1;
+    }
+
+    /* -------- ESTILOS FOOTER -------- */
+    #main-footer {
+
+        background-color: #6f9cbc;
+        margin-top: 1rem;
+    }
+
+    #top {
+        display: none;
+    }
+
+    #back {
+        display: none;
+    }
+
+    #fondo-footer {
+
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+    }
+
+    #content-footer {
+        position: relative;
+        margin: 0;
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+        background-color: #6f9cbc;
+    }
+
+    #content-footer>header {
+        display: flex;
+        order: -2;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+    }
+
+    #content-footer>header>p {
+        padding: 2% 4%;
+        font-size: x-large;
+        text-align: center;
+        border-left: 3px solid;
+    }
+
+    #redes-sociales {
+        order: -1;
+        flex-basis: 5%;
+    }
+
+    #e-t {
+        flex-basis: 20%;
+    }
+
+    #caja-tlf {
+
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+
+    #politicas {
+        flex-basis: 20%;
+    }
+
+    #foto-footer {
+        display: block;
+        width: 30%;
+        height: 60%;
+    }
 }
