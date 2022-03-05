@@ -300,7 +300,7 @@ main {
 #cab-central {
     text-align: end;
     width: 100%;
-    padding-right: 1.5%;
+    padding-right: 1rem;
     border-right: 3px solid #114B5F;
     border-left: 0px;
     order: 0;
