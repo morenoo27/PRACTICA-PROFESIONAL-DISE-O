@@ -32,6 +32,13 @@ $(document).ready(function () {
             $("#caja-buscar").slideToggle();
         }
     });
+
+    $("#cookies>button").click(function (e) {
+        e.preventDefault();
+        $("#cookies").toggle();
+        $("#fondo-cookies").toggle();
+
+    });
 });
 
 /**

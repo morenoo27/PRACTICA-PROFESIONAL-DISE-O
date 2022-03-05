@@ -11,6 +11,83 @@ body {
     overflow-x: hidden;
 }
 
+#fondo-cookies {
+    position: absolute;
+    z-index: 98;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 68%;
+    opacity: 0.8;
+    background-color: #CACACA;
+}
+
+#cookies {
+
+    position: absolute;
+    z-index: 99;
+    top: 25%;
+    left: 25%;
+    width: 50%;
+    height: 68%;
+
+    padding: 1rem;
+
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#cookies>h2 {
+    color: black;
+}
+
+#acepto {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+#acepto>div {
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.activar {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+}
+
+.circulo {
+    width: 30%;
+    height: 30%;
+    border-radius: 100%;
+    background-color: #BA6B30;
+    color: transparent;
+}
+
+.rail {
+    width: 80%;
+    height: 10%;
+    background-color: white;
+    border-radius: 1rem 0 0 1rem;
+    color: transparent;
+}
+
+#cookies>button {
+    margin-top: 1rem;
+    align-self: flex-end;
+    background-color: #028090;
+    border: none;
+    padding: 0.5rem 2rem;
+}
+
 /* -------- SECCIONES ESCRITORIO PRIMERO OCULTAS -------- */
 #foto-footer {
     display: none;
@@ -505,6 +582,32 @@ main {
 
 
 @media screen and (min-width: 800px) {
+
+    #fondo-cookies {
+
+        height: 23rem;
+    }
+
+    #cookies {
+        height: 23rem;
+    }
+
+    #content-cita {
+        height: auto;
+    }
+
+    #container-boton {
+        flex-flow: column;
+    }
+
+    #texto-info {
+        display: none;
+    }
+
+    #boton-cita {
+        align-self: flex-end;
+        margin-top: 10%;
+    }
 
     #manos {
         display: none;
