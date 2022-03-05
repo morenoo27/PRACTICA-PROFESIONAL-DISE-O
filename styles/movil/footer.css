@@ -20,8 +20,8 @@
     position: absolute;
     width: 150%;
     height: 10rem;
+    left: -20%;
     margin-top: 0.5rem;
-    left: -6.7rem;
     -moz-border-radius: 50%;
     -webkit-border-radius: 50%;
     border-radius: 50%;
@@ -52,7 +52,7 @@
 
     position: absolute;
     z-index: 8;
-    margin-top: 6rem;
+    margin-top: 9rem;
     display: flex;
     flex-flow: column nowrap;
     width: 100%;
