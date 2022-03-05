@@ -1,0 +1,399 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    /*font-family: 'Nunito Sans', sans-serif;*/
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    font-size: 12px;
+
+    overflow-x: hidden;
+}
+
+/* -------- CLASES -------- */
+.error {
+    visibility: hidden;
+    font-size: medium;
+    color: red;
+}
+
+.fecha {
+    background-color: #CACACA;
+    padding: 1rem 0.5rem;
+    width: 30%;
+    text-align: center;
+}
+
+/*estilo de los iconos*/
+img {
+    width: 2rem;
+    height: 2rem;
+}
+
+/* -------- ESTILOS CABECERA -------- */
+#main-header {
+
+    background-color: #28587B;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ESTILOS HAMBURGUESA */
+#hamburguesa>span {
+
+    cursor: pointer;
+    font-size: xx-large;
+    padding-left: 1rem;
+}
+
+/* LOGO */
+#logo {
+
+    width: 10rem;
+    height: 3rem;
+    color: #BA6B30;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo>span {
+
+    text-decoration: underline;
+    font-size: large;
+
+    font-family: 'Roboto, Light', sans-serif;
+}
+
+/* BUSCADOR */
+#buscador {
+    padding-right: 1rem;
+}
+
+#buscador>img {
+
+    cursor: pointer;
+}
+
+/* MENU */
+ul#menu-toggle {
+
+    display: flex;
+    flex-flow: column nowrap;
+    padding-left: 2rem;
+    position: absolute;
+    top: 3rem;
+    left: -20rem;
+    width: 20rem;
+    padding-left: 0;
+    height: 100vh;
+    background-color: #D5AC4E;
+    margin: 0;
+    z-index: 10;
+}
+
+ul#menu-toggle>li {
+
+    /*quitamos estilos del lis*/
+    list-style: none;
+
+    /*posicionamiento*/
+    left: 0;
+    padding-left: 0.7rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-self: center;
+    width: 97%;
+    margin-top: 1rem;
+
+    /*estilos*/
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 0.5px solid;
+}
+
+ul#menu-toggle>li:last-child {
+
+    padding-left: 0rem;
+    margin-top: 20rem;
+    align-self: flex-end;
+    border-bottom: 0;
+}
+
+#li-rrss>div {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+/* -------- MAIN -------- */
+main {
+    display: flex;
+    width: 100%;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+}
+
+/* --- BUSCADOR --- */
+#caja-buscar {
+
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: #d5ac4e;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: 0.6rem;
+}
+
+#caja-buscar>span {
+
+    width: 0.5px;
+    height: 2rem;
+    background-color: black;
+}
+
+#inputBuscar {
+
+    border: none;
+    background-color: #d5ac4e;
+    border-bottom: 0.5px solid;
+    flex-basis: 80%;
+    height: 1.5rem;
+}
+
+/* --- CUERPO --- */
+
+#top-content {
+
+    position: absolute;
+    width: 150%;
+    height: 10rem;
+    left: -20%;
+    margin-top: 1rem;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    z-index: 1;
+    background-color: #CACACA;
+}
+
+#contenido {
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    background-color: #CACACA;
+    align-items: center;
+    width: 100%;
+    margin-top: 3rem;
+    z-index: 2;
+}
+
+#contenido>header {
+    background-color: #CACACA;
+    display: flex;
+    width: 90%;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+#linea-cab-cita {
+
+    position: absolute;
+    left: 0;
+    background-color: #114B5F;
+    height: 30px;
+    width: 3px;
+    margin-left: 5%;
+}
+
+#texto-cab {
+
+    font-size: 24px;
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    text-align: center;
+    color: #114B5F;
+}
+
+#contenido>p {
+    text-align: justify;
+    width: 90%;
+    font-size: medium;
+
+}
+
+#formulario {
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+}
+
+#formulario>div {
+    flex-basis: 100%;
+}
+
+#imputs {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: #CACACA;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#imputs>p {
+    width: 80%;
+}
+
+#imputs>p>input {
+    width: 100%;
+    height: 2.5rem;
+    font-size: medium;
+}
+
+#caja-fechas {
+    background-color: white;
+    padding: 3px;
+}
+
+#caja-fechas>p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+}
+
+#caja-fechas>div {
+    padding: 3px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+#boton-cita {
+
+    background-color: #114B5F;
+    border-radius: 6px;
+    color: white;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-top: 3rem;
+}
+
+/* -------- ESTILOS FOOTER -------- */
+#main-footer {
+
+    background-color: #CACACA;
+}
+
+/* --- FONDO --- */
+
+/*posicionamiento fondo*/
+#fondo-footer {
+
+    display: flex;
+
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+}
+
+/*cabecera del footer*/
+#top {
+
+    position: absolute;
+    width: 150%;
+    height: 10rem;
+    left: -20%;
+    margin-top: 0.5rem;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    z-index: 2;
+    background-color: #6f9cbc;
+}
+
+/*fondo colorido*/
+#back {
+
+    width: 100%;
+    height: 10rem;
+    margin-top: 4rem;
+    background-color: #6f9cbc;
+}
+
+/* --- CONTENIDO --- */
+
+/*estilos del texto del footer*/
+.texto-footer {
+    font-size: large;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 0.3rem;
+}
+
+/*caja con el contenido*/
+#content-footer {
+
+    position: absolute;
+    z-index: 8;
+    margin-top: 9rem;
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    background-color: #6f9cbc;
+}
+
+/*seccion redes sociales*/
+#redes-sociales {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/*seccion email*/
+#email {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+/*estilos caja telefonos*/
+#caja-tlf {
+
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#caja-tlf>p {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*caja politicas*/
+#politicas {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#politicas>span {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
