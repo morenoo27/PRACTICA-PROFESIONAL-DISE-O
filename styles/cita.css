@@ -11,6 +11,19 @@ body {
     overflow-x: hidden;
 }
 
+/* -------- SECCIONES ESCRITORIO PRIMERO OCULTAS -------- */
+#foto-footer {
+    display: none;
+}
+
+#content-footer>header {
+    display: none;
+}
+
+#nav-cab {
+    display: none;
+}
+
 /* -------- CLASES -------- */
 .error {
     visibility: hidden;
@@ -93,7 +106,7 @@ ul#menu-toggle {
     height: 100vh;
     background-color: #D5AC4E;
     margin: 0;
-    z-index: 10;
+    z-index: 20;
 }
 
 ul#menu-toggle>li {
@@ -202,22 +215,13 @@ main {
     justify-content: center;
 }
 
-#linea-cab-cita {
-
-    position: absolute;
-    left: 0;
-    background-color: #114B5F;
-    height: 30px;
-    width: 3px;
-    margin-left: 5%;
-}
-
 #texto-cab {
 
     font-size: 24px;
     font-family: 'Roboto', sans-serif;
     width: 100%;
     text-align: center;
+    border-left: 3px solid #114B5F;
     color: #114B5F;
 }
 
@@ -396,4 +400,224 @@ main {
 #politicas>span {
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
+}
+
+
+@media screen and (min-width: 800px) {
+
+    #formulario>div {
+        flex-basis: 45%;
+    }
+
+    #imputs>p {
+        width: 80%;
+        display: flex;
+        flex-flow: column;
+    }
+
+    #imputs>p>span {
+        order: -1;
+    }
+
+    /* -------- ESTILOS FOOTER -------- */
+
+    #e-t {
+        order: -1;
+    }
+
+    #redes-sociales {
+
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #caja-tlf {
+
+        flex-flow: column nowrap;
+    }
+
+    #content-footer {
+
+        margin-top: 15%;
+        margin-left: 5%;
+        width: 90%;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        z-index: 11;
+    }
+
+    #politicas {
+        flex-flow: column nowrap;
+    }
+
+    #top {
+
+        position: absolute;
+        width: 150%;
+        height: 10rem;
+        left: -20%;
+        margin-top: 0.5rem;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        z-index: 10;
+        background-color: #6f9cbc;
+    }
+
+    #back {
+
+        margin-top: 20%;
+        background-color: #6f9cbc;
+        z-index: 0;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    /* -------- ESTILOS CABECERA -------- */
+    #main-header {
+        flex-flow: row wrap;
+    }
+
+    #nav-cab {
+        display: block;
+        width: 100%;
+        background-color: #6f9cbc;
+    }
+
+    #menu-cab {
+        padding-left: 0;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .lugar {
+        list-style: none;
+        font-size: medium;
+        font-family: 'Roboto', sans-serif;
+        padding: 0.5rem 2rem;
+        cursor: pointer;
+    }
+
+    .separador {
+
+        list-style: none;
+        padding: 0px;
+        height: 2rem;
+        width: 1px;
+        background-color: black;
+    }
+
+    /* -------- ESTILOS CONTENIDO -------- */
+
+    /* --- BUSCADOR --- */
+    #caja-buscar {
+        position: absolute;
+        top: 0;
+        right: 5%;
+        width: 40%;
+        z-index: 15;
+        justify-content: center;
+        background-color: transparent;
+    }
+
+    #caja-buscar>img {
+        display: none;
+    }
+
+    #caja-buscar>input {
+        margin-right: 6px;
+        background-color: transparent;
+    }
+
+    /* ------ CONTENIDO ------ */
+    #contenido {
+        margin-top: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 1rem;
+    }
+
+    #top-content {
+        display: none;
+    }
+
+    /* -------- ESTILOS FOOTER -------- */
+    #main-footer {
+
+        background-color: #6f9cbc;
+        margin-top: 1rem;
+    }
+
+    #top {
+        display: none;
+    }
+
+    #back {
+        display: none;
+    }
+
+    #fondo-footer {
+
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+    }
+
+    #content-footer {
+        position: relative;
+        margin: 0;
+        display: flex;
+        flex-flow: row wrap;
+        width: 100%;
+        background-color: #6f9cbc;
+    }
+
+    #content-footer>header {
+        display: flex;
+        order: -2;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+    }
+
+    #content-footer>header>p {
+        padding: 2% 4%;
+        font-size: x-large;
+        text-align: center;
+        border-left: 3px solid;
+    }
+
+    #redes-sociales {
+        order: -1;
+        flex-basis: 5%;
+    }
+
+    #e-t {
+        flex-basis: 20%;
+    }
+
+    #caja-tlf {
+
+        width: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+
+    #politicas {
+        flex-basis: 20%;
+    }
+
+    #foto-footer {
+        display: block;
+        width: 30%;
+        height: 60%;
+    }
 }
