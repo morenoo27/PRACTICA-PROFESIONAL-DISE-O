@@ -302,6 +302,10 @@ main {
     height: 1.5rem;
 }
 
+#inputBuscar:focus {
+    outline: none;
+}
+
 /* --- CAJA CITA --- */
 #caja-cita {
 
