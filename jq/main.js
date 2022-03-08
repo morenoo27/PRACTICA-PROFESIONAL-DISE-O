@@ -35,8 +35,9 @@ $(document).ready(function () {
 
     $("#cookies>button").click(function (e) {
         e.preventDefault();
-        $("#cookies").toggle();
-        $("#fondo-cookies").toggle();
+        
+        $("#cookies").fadeOut();
+        $("#fondo-cookies").fadeOut();
 
     });
 });

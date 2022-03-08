@@ -64,19 +64,28 @@ body {
     justify-content: center;
 }
 
+.activar>div {
+    width: 100%;
+}
+
 .circulo {
-    width: 30%;
-    height: 30%;
+    width: 5%;
+    height: 5%;
+
+    max-width: 5%;
+    max-height: 5%;
+
     border-radius: 100%;
     background-color: #BA6B30;
     color: transparent;
+    position: absolute;
 }
 
 .rail {
-    width: 80%;
+    width: 100%;
     height: 10%;
     background-color: white;
-    border-radius: 1rem 0 0 1rem;
+    border-radius: 1rem;
     color: transparent;
 }
 
@@ -286,19 +295,13 @@ main {
     padding: 0.6rem;
 }
 
-#caja-buscar>span {
-
-    width: 0.5px;
-    height: 2rem;
-    background-color: black;
-}
-
 #inputBuscar {
 
     border: none;
     background-color: #d5ac4e;
     border-bottom: 0.5px solid;
-    flex-basis: 80%;
+    flex-basis: 90%;
+    font-size: medium;
     height: 1.5rem;
 }
 
