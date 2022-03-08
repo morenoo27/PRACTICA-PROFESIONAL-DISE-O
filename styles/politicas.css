@@ -160,6 +160,10 @@ main {
     height: 1.5rem;
 }
 
+#inputBuscar:focus {
+    outline: none;
+}
+
 /* --- CUERPO --- */
 
 /*curva*/
