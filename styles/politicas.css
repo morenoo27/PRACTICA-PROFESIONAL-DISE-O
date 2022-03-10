@@ -11,10 +11,34 @@ body {
     overflow-x: hidden;
 }
 
+/* -------- SECCIONES ESCRITORIO PRIMERO OCULTAS -------- */
+#foto-footer {
+    display: none;
+}
+
+#content-footer>header {
+    display: none;
+}
+
+#nav-cab {
+    display: none;
+}
+
+#slider {
+    display: none;
+}
+
+#manitas {
+    display: none;
+}
+
+
 /* -------- CLASES -------- */
 
-nav>ul>li>a {
+a {
     cursor: pointer;
+    color: black;
+    text-decoration: none;
 }
 
 .header-leng {
@@ -292,6 +316,15 @@ main {
     align-items: center;
 }
 
+
+/*fila email y telefonos*/
+#e-t {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 /*seccion email*/
 #email {
     width: 100%;
@@ -301,21 +334,11 @@ main {
     align-items: center;
 }
 
-/*estilos caja telefonos*/
-#caja-tlf {
-
-    width: 100%;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-#caja-tlf>p {
+/*telefonos*/
+#e-t>p>a {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    justify-content: space-between;
 }
 
 /*caja politicas*/
@@ -500,9 +523,9 @@ main {
         display: flex;
         order: -2;
         flex-flow: row wrap;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
-        width: 100%;
+        width: 98%;
     }
 
     #content-footer>header>p {
@@ -515,28 +538,28 @@ main {
     #redes-sociales {
         order: -1;
         flex-basis: 5%;
+        height: auto;
+        justify-content: space-between;
     }
 
     #e-t {
         flex-basis: 20%;
+        justify-content: space-between;
     }
 
-    #caja-tlf {
-
-        width: 100%;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: space-evenly;
-        align-items: flex-start;
+    #email {
+        justify-content: flex-start;
     }
 
     #politicas {
         flex-basis: 20%;
+        align-items: flex-end;
+        margin-left: 15%;
     }
 
     #foto-footer {
         display: block;
-        width: 30%;
-        height: 60%;
+        width: 100%;
+        height: 100%;
     }
 }

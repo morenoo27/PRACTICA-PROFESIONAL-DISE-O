@@ -120,7 +120,7 @@ body {
 
 /* ---------- CLASES ---------- */
 
-nav>ul>li>a {
+a {
     cursor: pointer;
     color: black;
     text-decoration: none;
@@ -368,7 +368,7 @@ main {
 }
 
 /*BOTON CITA*/
-#boton-cita>p {
+#boton-cita>p>a {
 
     margin-right: 6px;
     padding: 0.9rem 1rem;
@@ -572,7 +572,7 @@ main {
 }
 
 /*telefonos*/
-#e-t>p {
+#e-t>p>a {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -951,7 +951,7 @@ main {
         padding: 0.7rem;
         border-radius: 0.3rem;
         cursor: pointer;
-        height: 79%;
+        height: 76%;
         font-size: xxx-large;
         display: flex;
         flex-flow: column;
@@ -974,7 +974,7 @@ main {
         padding: 0.7rem;
         border-radius: 0.3rem;
         cursor: pointer;
-        height: 79%;
+        height: 76%;
         font-size: xxx-large;
         display: flex;
         flex-flow: column;
@@ -1041,11 +1041,12 @@ main {
         order: -1;
         flex-basis: 5%;
         height: auto;
+        justify-content: space-between;
     }
 
     #e-t {
         flex-basis: 20%;
-        justify-content: center;
+        justify-content: space-between;
     }
 
     #email {
@@ -1054,11 +1055,13 @@ main {
 
     #politicas {
         flex-basis: 20%;
+        align-items: flex-end;
+        margin-left: 15%;
     }
 
     #foto-footer {
         display: block;
-        width: 30%;
-        height: 60%;
+        width: 100%;
+        height: 100%;
     }
 }
