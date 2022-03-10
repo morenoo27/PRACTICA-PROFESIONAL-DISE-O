@@ -25,6 +25,11 @@ body {
 }
 
 /* -------- CLASES -------- */
+
+nav>ul>li>a {
+    cursor: pointer;
+}
+
 .error {
     visibility: hidden;
     font-size: medium;

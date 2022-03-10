@@ -119,6 +119,13 @@ body {
 }
 
 /* ---------- CLASES ---------- */
+
+nav>ul>li>a {
+    cursor: pointer;
+    color: black;
+    text-decoration: none;
+}
+
 /*seccion de la cabecera de los slots*/
 .header-slots {
 
@@ -547,6 +554,14 @@ main {
     align-items: center;
 }
 
+/*fila email y telefonos*/
+#e-t {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 /*seccion email*/
 #email {
     width: 100%;
@@ -556,21 +571,11 @@ main {
     align-items: center;
 }
 
-/*estilos caja telefonos*/
-#caja-tlf {
-
-    width: 100%;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-#caja-tlf>p {
+/*telefonos*/
+#e-t>p {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
-    justify-content: space-between;
 }
 
 /*caja politicas*/
@@ -638,6 +643,11 @@ main {
     /* -------- ESTILOS FOOTER -------- */
     #e-t {
         order: -1;
+        flex-flow: column;
+    }
+
+    #e-t>p {
+        align-self: flex-start;
     }
 
     #redes-sociales {
@@ -647,11 +657,6 @@ main {
         flex-flow: column nowrap;
         justify-content: space-evenly;
         align-items: center;
-    }
-
-    #caja-tlf {
-
-        flex-flow: column nowrap;
     }
 
     #content-footer {
@@ -883,6 +888,7 @@ main {
         font-size: 2em;
         font-weight: 400;
         margin-bottom: 6px;
+        text-align: center;
     }
 
     .slider-wrapper p {
@@ -933,8 +939,8 @@ main {
     #boton-izquierda {
         /*posicionamiento boton*/
         position: absolute;
-        margin-top: 30%;
-        margin-left: 0.5rem;
+        margin-top: 2%;
+        left: 1%;
 
         /*para que este por encima de las imagenes*/
         z-index: 2;
@@ -945,14 +951,19 @@ main {
         padding: 0.7rem;
         border-radius: 0.3rem;
         cursor: pointer;
+        height: 79%;
+        font-size: xxx-large;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
     }
 
 
     #boton-derecha {
         /*posicionamiento boton*/
         position: absolute;
-        margin-top: 30%;
-        right: 4%;
+        margin-top: 2%;
+        right: 1%;
 
         /*para que este por encima de las imagenes*/
         z-index: 2;
@@ -963,6 +974,11 @@ main {
         padding: 0.7rem;
         border-radius: 0.3rem;
         cursor: pointer;
+        height: 79%;
+        font-size: xxx-large;
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
     }
 
     /*EVENTO HOVER DE BOTONES*/
@@ -1009,9 +1025,9 @@ main {
         display: flex;
         order: -2;
         flex-flow: row wrap;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
-        width: 100%;
+        width: 98%;
     }
 
     #content-footer>header>p {
@@ -1024,19 +1040,16 @@ main {
     #redes-sociales {
         order: -1;
         flex-basis: 5%;
+        height: auto;
     }
 
     #e-t {
         flex-basis: 20%;
+        justify-content: center;
     }
 
-    #caja-tlf {
-
-        width: 100%;
-        display: flex;
-        flex-flow: column nowrap;
-        justify-content: space-evenly;
-        align-items: flex-start;
+    #email {
+        justify-content: flex-start;
     }
 
     #politicas {
