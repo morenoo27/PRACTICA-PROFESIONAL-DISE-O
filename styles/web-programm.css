@@ -56,37 +56,64 @@ body {
     align-items: center;
 }
 
-.activar {
-    width: 20%;
-    height: 100%;
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
+/* Formateamos el label que servirá de contenedor */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
 }
 
-.activar>div {
-    width: 100%;
+/* Ocultamos el checkbox html */
+.switch input {
+    display: none;
 }
 
-.circulo {
-    width: 5%;
-    height: 5%;
-
-    max-width: 5%;
-    max-height: 5%;
-
-    border-radius: 100%;
-    background-color: #BA6B30;
-    color: transparent;
+/* Formateamos la caja del interruptor sobre la cual se deslizará la perilla de control o slider */
+.slider {
     position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
 }
 
-.rail {
-    width: 100%;
-    height: 10%;
+/* Pintamos la perilla de control o slider usando el selector before */
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
     background-color: white;
-    border-radius: 1rem;
-    color: transparent;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+/* Cambiamos el color de fondo cuando el checkbox esta activado */
+input:checked+.slider {
+    background-color: #D5AC4E;
+}
+
+/* Deslizamos el slider a la derecha cuando el checkbox esta activado */
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Aplicamos efecto de bordes redondeados en slider y en el fondo del slider */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
 }
 
 #cookies>button {
@@ -443,9 +470,14 @@ main {
     margin: 0.5rem 0;
 }
 
-.ambito>img {
+.ambito>a {
     width: 100%;
     height: 30%;
+}
+
+.ambito>a>img {
+    width: 100%;
+    height: 100%;
     border-radius: 6px;
 }
 
@@ -1063,5 +1095,6 @@ main {
         display: block;
         width: 100%;
         height: 100%;
+        margin-left: 40%;
     }
 }
