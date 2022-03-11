@@ -73,6 +73,7 @@ img {
     cursor: pointer;
     font-size: xx-large;
     padding-left: 1rem;
+    color: white;
 }
 
 /* LOGO */
@@ -80,7 +81,6 @@ img {
 
     width: 10rem;
     height: 3rem;
-    color: #BA6B30;
 
     display: flex;
     align-items: center;
@@ -90,7 +90,8 @@ img {
 #logo>span {
 
     text-decoration: underline;
-    font-size: large;
+    font-size: xx-large;
+    color: white;
 
     font-family: 'Roboto, Light', sans-serif;
 }
